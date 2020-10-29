@@ -5,18 +5,35 @@ using UnityEngine;
 public class stickyPlat : MonoBehaviour
 {
     public GameObject Player;
-
+    bool isTouch;
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject == Player)
         {
-            Player.transform.parent = transform;
+            isTouch = true;
+
+            
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        Player.transform.parent = null;
+        isTouch = false;
+        
+    }
+
+    void FixedUpdate()
+    {
+        if (isTouch == true)
+        {
+            Player.transform.parent = transform;
+        }
+
+        else
+        {
+            Player.transform.parent = null;
+        }
+
     }
 
 }
