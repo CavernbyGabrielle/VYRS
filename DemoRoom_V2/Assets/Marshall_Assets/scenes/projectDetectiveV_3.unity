@@ -9421,8 +9421,8 @@ GameObject:
   - component: {fileID: 1488495505}
   - component: {fileID: 1488495504}
   - component: {fileID: 1488495503}
-  - component: {fileID: 1488495506}
   - component: {fileID: 1488495507}
+  - component: {fileID: 1488495506}
   m_Layer: 8
   m_Name: Asset_Sidewalk_Thin_Dropdown (16)
   m_TagString: ground
@@ -9544,10 +9544,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1488495501}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c8871b73f2d736489aced2f176cc91f, type: 3}
+  m_Script: {fileID: 11500000, guid: a9028415fcb1c094aa5412b74dd04d35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 288995851}
+  player: {fileID: 288995851}
 --- !u!61 &1488495507
 BoxCollider2D:
   m_ObjectHideFlags: 0

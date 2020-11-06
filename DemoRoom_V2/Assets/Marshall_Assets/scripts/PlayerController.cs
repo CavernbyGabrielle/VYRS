@@ -65,13 +65,14 @@ public class PlayerController : MonoBehaviour
         PlayerFacing();
         Anim();
 
+        transform.localScale = transform.localScale;
         //if (isGrounded == false & walkSpeed != 1)
         //{
         //    walkSpeed -= 1f;
-       // }
+        // }
 
-       // if (isGrounded == true)
-       // {
+        // if (isGrounded == true)
+        // {
         //    walkSpeed = 30;
         //}
     }
